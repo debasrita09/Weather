@@ -1,0 +1,82 @@
+*{
+  color: white;
+}
+.default{
+  height: 82vh;
+  color:rgb(3, 118, 241);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding-top:10vh;
+  font-size: 35px;
+  background-color: rgb(238, 243, 249);
+  
+}
+.msgpic{
+  display: flex;
+  justify-content: center;
+}
+.homemessage{
+  color: rgb(3, 118, 241);
+  width: 400px;
+  font-size: 70px;
+  font-weight: bold;
+}
+.picture{
+  background-image: url("./home.jpg");
+    background-size:contain;
+    background-repeat:no-repeat;
+    width: 600px;    
+}
+.default .popcities{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  
+}
+.popcities button{
+  padding: 3px;
+  width: 150px;
+  background-color: rgb(62, 152, 247);
+  font-size: 26px;
+  height: 40px;
+}
+.popcities button:hover{
+  background-color: rgb(16, 128, 248);
+}
+.error{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: 92vh;
+}
+.error h1{
+  font-size: 100px;
+  color: rgb(248, 16, 51);
+  
+  border-radius: 6px;
+  padding: 4px;
+  
+}
+.error h2{
+  font-size: 40px;
+  color: rgb(16, 128, 248);
+}
+.cities{
+  display: flex;
+  gap: 50px;
+}
+.cities button{
+  padding: 3px;
+  width: 150px;
+  background-color: rgb(63, 156, 254);
+  font-size: 26px;
+  height: 40px;
+}
+.cities button:hover{
+  background-color: rgb(27, 132, 244);
+}
