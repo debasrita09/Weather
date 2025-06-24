@@ -24,7 +24,7 @@
   font-weight: bold;
 }
 .picture{
-  background-image: url("./home.jpg");
+  background-image: url("/home.jpg");
     background-size:contain;
     background-repeat:no-repeat;
     width: 600px;    
