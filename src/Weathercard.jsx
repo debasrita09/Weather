@@ -1,12 +1,22 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import "./weathercard.css"
-export default function Weather({ data }) {
+export default function Weather({ data, key1 }) {
+    key1=data.city;
     function capitalize(text) {
         return text
             .split(" ")
             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
             .join(" ");
     }
+    const [move, setMove]=useState(false);
+    
+      useEffect(()=>{
+        setMove(false);
+        const timer=setTimeout(()=>{
+            setMove(true);
+        },10);
+        return ()=> clearTimeout(timer);
+      },[key1]);
     let background;
     switch (data.weather[0].description) {
         case "clear sky": {
@@ -164,7 +174,7 @@ export default function Weather({ data }) {
             backgroundRepeat: 'noRepeat'
         }}>
             <h2>Showing results for {capitalize(data.name)}</h2>
-            <div className="body">
+            <div className={`body ${move? "move3": ""}`}>
                 <div className="temp">
                     <h3>Temperature</h3>
                     <div className="tempbody">

@@ -10,29 +10,48 @@
   gap: 60px;
   padding-top:10vh;
   font-size: 35px;
-  background-color: rgb(238, 243, 249);
+  background-color: rgb(231, 241, 252);
   
 }
 .msgpic{
   display: flex;
   justify-content: center;
+  height: 350px;
+  gap: 200px;
+  opacity: 0.7;
+  transition: all 1.5s ease;
+}
+.move1{
+  gap: 0px;
+  opacity: 1;
 }
 .homemessage{
   color: rgb(3, 118, 241);
   width: 400px;
   font-size: 70px;
   font-weight: bold;
+  
+  
 }
+
 .picture{
-  background-image: url("/home.jpg");
+
     background-size:contain;
     background-repeat:no-repeat;
-    width: 600px;    
+    width: 700px;    
+    transition: background-image 0.5s ease;
 }
 .default .popcities{
   display: flex;
-  gap: 50px;
+  gap: 70px;
   justify-content: center;
+  flex-wrap: wrap;
+  
+  transition: all 1.5s ease;
+  
+}
+.popcities.move2{
+  gap: 50px;
   
 }
 .popcities button{
@@ -80,3 +99,4 @@
 .cities button:hover{
   background-color: rgb(27, 132, 244);
 }
+
